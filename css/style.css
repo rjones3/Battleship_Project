@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+.gameboard {
+    height: 700px;
+    width: 700px;
+    background-color: blue;
+}
+
+.box {
+    float: left;
+    width: calc(100%/10);
+    height: calc(100%/10);
+    border: 1px solid #000;
+}
+.myheader {
+    text-align: center;
+    background-color: black;
+    color: red;
+    font-size: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+.btn {
+    margin: 33.5px 5px;
+    background-color: red;
+    border: solid 1px black;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* .box {
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+    position: absolute;
+}
+.box1 {
+    left: 0px;
+}
+.box2 {
+    left: 200px;
+}
+.box3 {
+    left: 400px;
+}
+.box4 {
+    left: 0px;
+    bottom: 200px;
+}
+.box5 {
+    left: 200px;
+    bottom: 200px;
+}
+.box6 {
+    left: 400px;
+    bottom: 200px;
+}
+.box7 {
+    left: 0px;
+    bottom: 0px;
+}
+.box8 {
+    left: 200px;
+    bottom: 0px;
+}
+.box9 {
+    left: 400px;
+    bottom: 0px;
+} */

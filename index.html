@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <style>
+        .battleship {
+            background: transparent url(img/piece.png) no-repeat;
+            background-size: contain;
+        }
+        .compshot {
+            background: transparent url(img/compshot.gif) no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+    <body style="background-color:black;">
+        <h1 class="myheader">Battleships</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="gameboard">
+                        <div data-x="1" data-y="1"  class="box box1">1</div>
+                        <div data-x="2" data-y="1"  class="box box2">2</div>
+                        <div data-x="3" data-y="1"  class="box box3">3</div>
+                        <div data-x="4" data-y="1"  class="box box4">4</div>
+                        <div data-x="5" data-y="1"  class="box box5">5</div>
+                        <div data-x="6" data-y="1"  class="box box6">6</div>
+                        <div data-x="7" data-y="1"  class="box box7">7</div>
+                        <div data-x="8" data-y="1"  class="box box8">8</div>
+                        <div data-x="9" data-y="1"  class="box box9">9</div>
+                        <div data-x="10" data-y="1" class="box box10">10</div>
+                        <div data-x="1" data-y="2"  class="box box11">11</div>
+                        <div data-x="2" data-y="2"  class="box box12">12</div>
+                        <div data-x="3" data-y="2"  class="box box13">13</div>
+                        <div data-x="4" data-y="2"  class="box box14">14</div>
+                        <div data-x="5" data-y="2"  class="box box15">15</div>
+                        <div data-x="6" data-y="2"  class="box box16">16</div>
+                        <div data-x="7" data-y="2"  class="box box17">17</div>
+                        <div data-x="8" data-y="2"  class="box box18">18</div>
+                        <div data-x="9" data-y="2"  class="box box19">19</div>
+                        <div data-x="10" data-y="2" class="box box20">20</div>
+                        <div data-x="1" data-y="3"  class="box box21">21</div>
+                        <div data-x="2" data-y="3"  class="box box22">22</div>
+                        <div data-x="3" data-y="3"  class="box box23">23</div>
+                        <div data-x="4" data-y="3"  class="box box24">24</div>
+                        <div data-x="5" data-y="3"  class="box box25">25</div>
+                        <div data-x="6" data-y="3"  class="box box26">26</div>
+                        <div data-x="7" data-y="3"  class="box box27">27</div>
+                        <div data-x="8" data-y="3"  class="box box28">28</div>
+                        <div data-x="9" data-y="3"  class="box box29">29</div>
+                        <div data-x="10" data-y="3" class="box box30">30</div>
+                        <div data-x="1" data-y="4"  class="box box31">31</div>
+                        <div data-x="2" data-y="4"  class="box box32">32</div>
+                        <div data-x="3" data-y="4"  class="box box33">33</div>
+                        <div data-x="4" data-y="4"  class="box box34">34</div>
+                        <div data-x="5" data-y="4"  class="box box35">35</div>
+                        <div data-x="6" data-y="4"  class="box box36">36</div>
+                        <div data-x="7" data-y="4"  class="box box37">37</div>
+                        <div data-x="8" data-y="4"  class="box box38">38</div>
+                        <div data-x="9" data-y="4"  class="box box39">39</div>
+                        <div data-x="10" data-y="4" class="box box40">40</div>
+                        <div data-x="1" data-y="5"  class="box box41">41</div>
+                        <div data-x="2" data-y="5"  class="box box42">42</div>
+                        <div data-x="3" data-y="5"  class="box box43">43</div>
+                        <div data-x="4" data-y="5"  class="box box44">44</div>
+                        <div data-x="5" data-y="5"  class="box box45">45</div>
+                        <div data-x="6" data-y="5"  class="box box46">46</div>
+                        <div data-x="7" data-y="5"  class="box box47">47</div>
+                        <div data-x="8" data-y="5"  class="box box48">48</div>
+                        <div data-x="9" data-y="5"  class="box box49">49</div>
+                        <div data-x="10" data-y="5" class="box box50">50</div>
+                        <div data-x="1" data-y="6"  class="box box51">51</div>
+                        <div data-x="2" data-y="6"  class="box box52">52</div>
+                        <div data-x="3" data-y="6"  class="box box53">53</div>
+                        <div data-x="4" data-y="6"  class="box box54">54</div>
+                        <div data-x="5" data-y="6"  class="box box55">55</div>
+                        <div data-x="6" data-y="6"  class="box box56">56</div>
+                        <div data-x="7" data-y="6"  class="box box57">57</div>
+                        <div data-x="8" data-y="6"  class="box box58">58</div>
+                        <div data-x="9" data-y="6"  class="box box59">59</div>
+                        <div data-x="10" data-y="6" class="box box60">60</div>
+                        <div data-x="1" data-y="7"  class="box box61">61</div>
+                        <div data-x="2" data-y="7"  class="box box62">62</div>
+                        <div data-x="3" data-y="7"  class="box box63">63</div>
+                        <div data-x="4" data-y="7"  class="box box64">64</div>
+                        <div data-x="5" data-y="7"  class="box box65">65</div>
+                        <div data-x="6" data-y="7"  class="box box66">66</div>
+                        <div data-x="7" data-y="7"  class="box box67">67</div>
+                        <div data-x="8" data-y="7"  class="box box68">68</div>
+                        <div data-x="9" data-y="7"  class="box box69">69</div>
+                        <div data-x="10" data-y="7" class="box box70">70</div>
+                        <div data-x="1" data-y="8"  class="box box71">71</div>
+                        <div data-x="2" data-y="8"  class="box box72">72</div>
+                        <div data-x="3" data-y="8"  class="box box73">73</div>
+                        <div data-x="4" data-y="8"  class="box box74">74</div>
+                        <div data-x="5" data-y="8"  class="box box75">75</div>
+                        <div data-x="6" data-y="8"  class="box box76">76</div>
+                        <div data-x="7" data-y="8"  class="box box77">77</div>
+                        <div data-x="8" data-y="8"  class="box box78">78</div>
+                        <div data-x="9" data-y="8"  class="box box79">79</div>
+                        <div data-x="10" data-y="8" class="box box80">80</div>
+                        <div data-x="1" data-y="9"  class="box box81">81</div>
+                        <div data-x="2" data-y="9"  class="box box82">82</div>
+                        <div data-x="3" data-y="9"  class="box box83">83</div>
+                        <div data-x="4" data-y="9"  class="box box84">84</div>
+                        <div data-x="5" data-y="9"  class="box box85">85</div>
+                        <div data-x="6" data-y="9"  class="box box86">86</div>
+                        <div data-x="7" data-y="9"  class="box box87">87</div>
+                        <div data-x="8" data-y="9"  class="box box88">88</div>
+                        <div data-x="9" data-y="9"  class="box box89">89</div>
+                        <div data-x="10" data-y="9" class="box box90">90</div>
+                        <div data-x="1" data-y="10" class="box box91">91</div>
+                        <div data-x="2" data-y="10" class="box box92">92</div>
+                        <div data-x="3" data-y="10" class="box box93">93</div>
+                        <div data-x="4" data-y="10" class="box box94">94</div>
+                        <div data-x="5" data-y="10" class="box box95">95</div>
+                        <div data-x="6" data-y="10" class="box box96">96</div>
+                        <div data-x="7" data-y="10" class="box box97">97</div>
+                        <div data-x="8" data-y="10" class="box box98">98</div>
+                        <div data-x="9" data-y="10" class="box box99">99</div>
+                        <div data-x="10" data-y="10" class="box box100">100</div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <button class="btn" onclick="setplayer1()">Set Piece</button>
+                    <button id="confirm" class="hidden btn" type="submit" onclick="confirmPlayer1()">Battle!</button>
+                    <button class="hidden btn" onclick="playagain()">Play Again?</button>
+                </div>
+            </div>
+            
+            
+           
+
+        <!-- <div data-x="1" data-y="1" class="box box1" onclick="play()"><h1>1</h1></div>
+        <div data-x="1" data-y="2" class="box box2" onclick="play()"><h1>2</h1></div>
+        <div data-x="1" data-y="3" class="box box3" onclick="play()"><h1>3</h1></div>
+        <div class="box" onclick="play()"><h1></h1></div>
+        <div data-x="2" data-y="1" class="box box4" onclick="play()"><h1>4</h1></div>
+        <div data-x="2" data-y="2" class="box box5" onclick="play()"><h1>5</h1></div>
+        <div data-x="2" data-y="3" class="box box6" onclick="play()"><h1>6</h1></div>
+        <div class="box" onclick="play()"><h1></h1></div>
+        <div data-x="3" data-y="1" class="box box7" onclick="play()"><h1>7</h1></div>
+        <div data-x="3" data-y="2" class="box box8" onclick="play()"><h1>8</h1></div>
+        <div data-x="3" data-y="3" class="box box9" onclick="play()"><h1>9</h1></div>
+        <div class="box" onclick="play()"><h1></h1></div> -->
+    </div>
+    <script type="text/javascript" src="battleship.js"></script>
+</body>
+</html>
